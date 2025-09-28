@@ -30,6 +30,11 @@
             overflow-x: hidden;
         }
 
+        html {
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
         /* ナビゲーション */
         .navbar {
             position: fixed;
@@ -105,6 +110,7 @@
             justify-content: center;
             position: relative;
             background: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.1) 0%, var(--primary-black) 70%);
+            scroll-snap-align: start;
         }
 
         .hero-content {
@@ -156,6 +162,11 @@
             margin: 0 auto;
             padding-left: 2rem;
             padding-right: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            scroll-snap-align: start;
         }
 
         .section-title {
@@ -324,6 +335,11 @@
         /* コンタクトセクション */
         .contact {
             background: var(--secondary-black);
+            scroll-snap-align: start;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .contact-content {
@@ -371,6 +387,7 @@
             background: var(--primary-black);
             color: var(--text-gray);
             border-top: 1px solid var(--border-gray);
+            scroll-snap-align: end;
         }
 
         /* アニメーション */
@@ -387,6 +404,10 @@
 
         /* レスポンシブ対応 */
         @media (max-width: 768px) {
+            html {
+                scroll-snap-type: none;
+            }
+
             .nav-links {
                 display: none;
             }
@@ -417,6 +438,24 @@
             .contact-links {
                 flex-direction: column;
                 align-items: center;
+            }
+
+            .section {
+                min-height: auto;
+                scroll-snap-align: none;
+            }
+
+            .hero {
+                scroll-snap-align: none;
+            }
+
+            .contact {
+                min-height: auto;
+                scroll-snap-align: none;
+            }
+
+            .footer {
+                scroll-snap-align: none;
             }
         }
 
