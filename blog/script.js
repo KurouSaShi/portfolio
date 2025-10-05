@@ -36,8 +36,15 @@ function closeSidebar() {
 // 現在のページの階層レベルを取得
 function getCurrentDepth() {
     const path = window.location.pathname;
-    const parts = path.split('/').filter(p => p && p !== 'index.html');
-    return parts.length;
+    const filename = path.split('/').pop();
+    
+    // top.htmlはルート扱い
+    if (filename === 'top.html' || path.endsWith('/')) {
+        return 0;
+    }
+    
+    const parts = path.split('/').filter(p => p && p !== 'top.html');
+    return parts.length - 1;
 }
 
 // 相対パスを生成
@@ -107,7 +114,6 @@ function searchArticles(query) {
         const isCategory = item.querySelector('.index-category') !== null;
         
         if (isCategory) {
-            // カテゴリの場合、子要素も確認
             const childItems = item.querySelectorAll('ul li');
             let hasMatch = false;
             
@@ -121,10 +127,8 @@ function searchArticles(query) {
                 }
             });
             
-            // カテゴリ名自体にマッチするか、子要素にマッチがある場合は表示
             if (text.includes(searchTerm) || hasMatch || !searchTerm) {
                 item.style.display = '';
-                // 検索時は自動で開く
                 if (searchTerm && hasMatch) {
                     const ul = item.querySelector('ul');
                     const toggle = item.querySelector('.index-toggle');
