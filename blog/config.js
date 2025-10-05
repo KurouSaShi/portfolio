@@ -1,6 +1,6 @@
 // ブログの設定
 const blogConfig = {
-    title: "My Blog",
+    title: "音ゲー大会Blog",
     tags: {
         "tag1": [
             { title: "記事1のタイトル", file: "page1.html" },
