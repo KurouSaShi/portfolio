@@ -1,0 +1,30 @@
+name: Generate Config
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: Generate config.js
+      run: node generate-config.js
+    
+    - name: Commit config.js
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add config.js
+        git diff --quiet && git diff --staged --quiet || git commit -m "Auto-generate config.js"
+        git push
