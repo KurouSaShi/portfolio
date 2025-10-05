@@ -43,7 +43,7 @@ const blogConfig = {
         ],
         "M:小噺": [
             { title: "記事20のタイトル", file: "page20.html" }
-        ],
+        ]
         
     }
 };
