@@ -38,7 +38,7 @@ const blogConfig = {
         "K:ルール": [
             { title: "記事20のタイトル", file: "page20.html" }
         ],
-        "L:実例:" [
+        "L:実例" : [
             { title: "記事20のタイトル", file: "page20.html" }
         ],
         "M:小噺": [
