@@ -3,8 +3,9 @@ name: Generate Config
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+
+permissions:
+  contents: write  # これを追加！
 
 jobs:
   build:
@@ -12,6 +13,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Setup Node.js
       uses: actions/setup-node@v3
@@ -21,10 +24,16 @@ jobs:
     - name: Generate config.js
       run: node generate-config.js
     
-    - name: Commit config.js
+    - name: Check for changes
+      id: check_changes
+      run: |
+        git diff --exit-code config.js || echo "changed=true" >> $GITHUB_OUTPUT
+    
+    - name: Commit and push if changed
+      if: steps.check_changes.outputs.changed == 'true'
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add config.js
-        git diff --quiet && git diff --staged --quiet || git commit -m "Auto-generate config.js"
+        git commit -m "🤖 Auto-generate config.js"
         git push
