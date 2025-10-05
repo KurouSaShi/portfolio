@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>My Blog</h1>
+        <div class="header-content">
+            <h1>My Blog</h1>
+            <button class="sidebar-toggle" onclick="toggleSidebar()">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
     </header>
+
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
 
     <div class="container">
         <main class="main-content">
@@ -89,5 +100,7 @@
             </div>
         </aside>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
