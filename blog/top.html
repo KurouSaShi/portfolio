@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Title</title>
+    <title>My Blog</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1>My Blog</h1>
+            <h1><a href="./" style="color: inherit; text-decoration: none;">My Blog</a></h1>
             <button class="sidebar-toggle" onclick="toggleSidebar()">
                 <span class="hamburger"></span>
                 <span class="hamburger"></span>
@@ -23,84 +22,18 @@
 
     <div class="container">
         <main class="main-content">
-            <!-- トップページ用: 記事一覧 -->
-            <a href="tag1/page1.html" class="article-list-item">
-                <h2 class="article-list-title">記事1のタイトル</h2>
-                <div class="article-list-meta">
-                    <span>2025年10月5日</span>
-                    <div class="article-tags">
-                        <span class="tag">#tag1</span>
-                        <span class="tag">#tag2</span>
-                    </div>
+            <article class="article">
+                <div class="article-content">
+                    <h1>ブログへようこそ</h1>
+                    <p>ここにトップページの本文を書きます。</p>
                 </div>
-            </a>
-
-            <a href="tag1/page2.html" class="article-list-item">
-                <h2 class="article-list-title">記事2のタイトル</h2>
-                <div class="article-list-meta">
-                    <span>2025年10月4日</span>
-                    <div class="article-tags">
-                        <span class="tag">#tag1</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="tag2/page11.html" class="article-list-item">
-                <h2 class="article-list-title">記事11のタイトル</h2>
-                <div class="article-list-meta">
-                    <span>2025年10月3日</span>
-                    <div class="article-tags">
-                        <span class="tag">#tag2</span>
-                        <span class="tag">#tag3</span>
-                    </div>
-                </div>
-            </a>
+            </article>
         </main>
 
-        <aside class="sidebar">
-            <div class="search-box">
-                <h3>検索</h3>
-                <input type="search" placeholder="記事を検索...">
-            </div>
-
-            <div class="index-box">
-                <h3>インデックス</h3>
-                <ul class="index-list">
-                    <li>
-                        <div class="index-category" onclick="toggleIndex(this)">
-                            <span class="index-toggle">▶</span>
-                            <a href="tag1/">Tag1</a>
-                        </div>
-                        <ul>
-                            <li><a href="tag1/page1.html">記事1のタイトル</a></li>
-                            <li><a href="tag1/page2.html">記事2のタイトル</a></li>
-                            <li><a href="tag1/page3.html">記事3のタイトル</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="index-category" onclick="toggleIndex(this)">
-                            <span class="index-toggle">▶</span>
-                            <a href="tag2/">Tag2</a>
-                        </div>
-                        <ul>
-                            <li><a href="tag2/page11.html">記事11のタイトル</a></li>
-                            <li><a href="tag2/page12.html">記事12のタイトル</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="index-category" onclick="toggleIndex(this)">
-                            <span class="index-toggle">▶</span>
-                            <a href="tag3/">Tag3</a>
-                        </div>
-                        <ul>
-                            <li><a href="tag3/page20.html">記事20のタイトル</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </aside>
+        <aside class="sidebar" id="sidebar"></aside>
     </div>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
