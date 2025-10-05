@@ -78,13 +78,13 @@ function generateSidebar() {
             <li>
                 <div class="index-category" onclick="toggleIndex(this)">
                     <span class="index-toggle">▶</span>
-                    <a href="${basePath}${tag}/">${tag}</a>
+                    <span>${tag}</span>
                 </div>
                 <ul>
         `;
         
         articles.forEach(article => {
-            html += `<li><a href="${basePath}${tag}/${article.file}">${article.title}</a></li>`;
+            html += `<li><a href="${basePath}${article.file}">${article.title}</a></li>`;
         });
         
         html += `
