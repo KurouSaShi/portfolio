@@ -32,7 +32,7 @@ function scanDirectory() {
     const items = fs.readdirSync(blogRoot, { withFileTypes: true });
     
     items.forEach(item => {
-        if (item.isDirectory() && !item.name.startsWith('.')) {
+        if (item.isDirectory() && !item.name.startsWith('.') && item.name !== 'node_modules') {
             const tagName = item.name;
             const tagPath = path.join(blogRoot, tagName);
             const articles = [];
@@ -40,7 +40,7 @@ function scanDirectory() {
             // タグディレクトリ内のHTMLファイルを取得
             const files = fs.readdirSync(tagPath);
             files.forEach(file => {
-                if (file.endsWith('.html') && file !== 'index.html') {
+                if (file.endsWith('.html')) {
                     const filePath = path.join(tagPath, file);
                     const title = extractTitle(filePath);
                     articles.push({
