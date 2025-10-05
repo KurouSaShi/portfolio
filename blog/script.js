@@ -36,7 +36,14 @@ function closeSidebar() {
 // 現在のページの階層レベルを取得
 function getCurrentDepth() {
     const path = window.location.pathname;
-    const parts = path.split('/').filter(p => p && p !== 'index.html');
+    const fileName = path.split('/').pop();
+    
+    // top.htmlの場合は階層0
+    if (fileName === 'top.html' || fileName === '') {
+        return 0;
+    }
+    
+    const parts = path.split('/').filter(p => p && p !== 'top.html');
     return parts.length;
 }
 
