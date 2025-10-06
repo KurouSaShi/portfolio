@@ -9,7 +9,7 @@ const blogConfig = {
             { title: "B01: 「おもしろい」 ってなんだろう", file: "gameplay/B01.html" }
         ],
         "C:文章": [
-            
+            { title: "C01: 人に伝える一番簡単な手段", file: "writing/C01.html" }
         ],
         "D:画像": [
             
