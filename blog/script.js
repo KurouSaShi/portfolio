@@ -70,7 +70,7 @@ function generateSidebar() {
         <div class="index-box">
             <h3>インデックス</h3>
             <ul class="index-list" id="indexList">
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="音ゲー大会小噺" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <button id="share-twitter">このページをTwitterでシェア</button>
     `;
 
     // タグごとに記事をリスト化
@@ -101,6 +101,62 @@ function generateSidebar() {
 
     sidebar.innerHTML = html;
 }
+/**
+ * 現在のページのタイトルとURLを取って
+ * Twitterの投稿画面を別ウィンドウで開く
+ *
+ * @param {Object} options
+ *   text: 投稿先頭に入れるテキスト（デフォルトは document.title）
+ *   url: 共有するURL（デフォルトは location.href）
+ *   via: Twitterアカウント（without @）
+ *   hashtags: 配列またはカンマ区切り文字列（例: ["foo","bar"] または "foo,bar"）
+ *   width,height: ポップアップサイズの指定（省略可）
+ */
+function shareToTwitter(options = {}) {
+  const title = options.text ?? document.title ?? '';
+  const url = options.url ?? location.href;
+  const via = options.via ? `&via=${encodeURIComponent(options.via)}` : '';
+  let hashtags = '';
+  if (options.hashtags) {
+    if (Array.isArray(options.hashtags)) {
+      hashtags = options.hashtags.join(',');
+    } else {
+      hashtags = String(options.hashtags);
+    }
+    hashtags = `&hashtags=${encodeURIComponent(hashtags)}`;
+  }
+
+  const tweetText = encodeURIComponent(title);
+  const tweetUrl = encodeURIComponent(url);
+
+  const intentUrl = `https://twitter.com/intent/tweet?text=${tweetText}&url=${tweetUrl}${via}${hashtags}`;
+
+  // ポップアップを中央に表示
+  const w = options.width ?? 550;
+  const h = options.height ?? 420;
+  const left = Math.round((screen.width - w) / 2);
+  const top = Math.round((screen.height - h) / 2);
+
+  const features = `toolbar=0,status=0,resizable=1,width=${w},height=${h},left=${left},top=${top}`;
+
+  const popup = window.open(intentUrl, 'tweetWindow', features);
+
+  // ポップアップブロック等で開けなかった場合は同タブで開く
+  if (!popup) {
+    window.location.href = intentUrl;
+  } else {
+    popup.focus();
+  }
+}
+
+// ボタンに紐付ける例
+document.getElementById('share-twitter').addEventListener('click', function () {
+  shareToTwitter({
+    // text: 'ここに冒頭テキストを入れられます（省略時はページタイトル）',
+    // via: 'your_twitter_account',
+    // hashtags: ['example','share']
+  });
+});
 
 // 検索機能
 function searchArticles(query) {
