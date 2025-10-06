@@ -6,6 +6,7 @@ const blogConfig = {
             { title: "A01:大会を開くということは", file: "work/A01.html" }
         ],
         "B:ゲーム性": [
+            { title: "B01:「おもしろい」ってなんだろう", file: "gameplay/B01.html" }
         ],
         "C:文章": [
             
