@@ -70,6 +70,7 @@ function generateSidebar() {
         <div class="index-box">
             <h3>インデックス</h3>
             <ul class="index-list" id="indexList">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="音ゲー大会小噺" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     `;
 
     // タグごとに記事をリスト化
