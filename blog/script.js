@@ -37,9 +37,20 @@ function closeSidebar() {
 function getCurrentDepth() {
     const path = window.location.pathname;
     const filename = path.split('/').pop();
-    if (filename === 'top.html' || path.endsWith('/')) return 0;
-    const parts = path.split('/').filter(p => p && p !== 'top.html');
-    return parts.length - 1;
+    
+    // top.htmlはルート扱い
+    if (filename === 'top.html' || path.endsWith('/')) {
+        return 0;
+    }
+    
+    // blog/ からの相対的な深さを計算
+    const blogIndex = path.indexOf('/blog/');
+    if (blogIndex === -1) return 0;
+    
+    const afterBlog = path.substring(blogIndex + 6); // '/blog/' の後
+    const parts = afterBlog.split('/').filter(p => p && p !== filename);
+    
+    return parts.length;
 }
 
 // 相対パスを生成
