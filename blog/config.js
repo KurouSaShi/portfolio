@@ -12,7 +12,7 @@ const blogConfig = {
             { title: "C01: 人に伝える一番簡単な手段", file: "writing/C01.html" }
         ],
         "D:ヴィジュアル": [
-            
+            { title: " D01:画像や動画の役割", file: "visual/D01.html" }
         ],
         "E:配信": [
             
