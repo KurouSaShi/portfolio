@@ -11,7 +11,7 @@ const blogConfig = {
         "C:文章": [
             { title: "C01: 人に伝える一番簡単な手段", file: "writing/C01.html" }
         ],
-        "D:画像": [
+        "D:ヴィジュアル": [
             
         ],
         "E:配信": [
