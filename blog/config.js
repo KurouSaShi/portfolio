@@ -15,7 +15,7 @@ const blogConfig = {
             { title: " D01:画像や動画の役割", file: "visual/D01.html" }
         ],
         "E:配信": [
-            
+            { title: "E01:盛り上がりを演出する", file: "treaming/E01.html" }
         ],
         "F:チーム運営": [
             
