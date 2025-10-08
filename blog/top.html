@@ -38,5 +38,13 @@
 
     <script src="config.js"></script>
     <script src="script.js"></script>
+    <script>
+    // config.jsとscript.jsの両方が読み込まれた後に実行
+    if (typeof blogConfig !== 'undefined') {
+        document.addEventListener('DOMContentLoaded', generateSidebar);
+    } else {
+        console.error('config.js not loaded properly');
+    }
+</script>
 </body>
 </html>
