@@ -24,7 +24,7 @@ const blogConfig = {
             { title: "G01:誰が味方？", file: "outreach/G01.html" }
         ],
         "H:選手": [
-            
+            { title: "H01:選手あっての大会", file: "players/H01.html" }
         ],
         "I:観客": [
             
