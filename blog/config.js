@@ -21,7 +21,7 @@ const blogConfig = {
             { title: "F01:人が増えると仕事も増える！？", file: "management/F01.html" }
         ],
         "G:外部とのやり取り": [
-            
+            { title: "G01:誰が味方？", file: "outreach/G01.html" }
         ],
         "H:選手": [
             
