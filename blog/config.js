@@ -30,7 +30,7 @@ const blogConfig = {
             { title: "I01:観客とともに進化する", file: "spectators/I01.html" }
         ],
         "J:スケジュール": [
-            
+            { title: "J01:時間は信頼", file: "schedule/J01.html" }
         ],
         "K:ルール": [
             
