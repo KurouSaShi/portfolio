@@ -34,7 +34,7 @@ const blogConfig = {
         ],
         "K:ルール": [
              { title: "K01:大会はアイディア勝負？", file: "rule/K01.html" }
-        ],大会はアイディア勝負？
+        ],
         "L:実例": [
             
         ],
