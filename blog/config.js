@@ -33,8 +33,8 @@ const blogConfig = {
             { title: "J01:時間は信頼", file: "schedule/J01.html" }
         ],
         "K:ルール": [
-            
-        ],
+             { title: "K01:大会はアイディア勝負？", file: "rule/K01.html" }
+        ],大会はアイディア勝負？
         "L:実例": [
             
         ],
