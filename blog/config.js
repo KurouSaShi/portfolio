@@ -36,7 +36,7 @@ const blogConfig = {
              { title: "K01:大会はアイディア勝負？", file: "rule/K01.html" }
         ],
         "L:実例": [
-            { title: "L01:LINEオープンチャットでの大会", file: "L01:LINEオープンチャットでの大会/L01.html" }
+            { title: "L01:LINEオープンチャットでの大会", file: "examples/L01.html" }
         ],
         "M:小噺": [
             
