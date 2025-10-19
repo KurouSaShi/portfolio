@@ -39,7 +39,7 @@ const blogConfig = {
             { title: "L01:LINEオープンチャットでの大会", file: "examples/L01.html" }
         ],
         "M:小噺": [
-            
+             { title: "M01:音ゲーが下手でも大会出来る？", file: "story/M01.html" }
         ]    
     }
 };
