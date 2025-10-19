@@ -3,7 +3,8 @@ const blogConfig = {
     title: "音ゲー大会Blog",
     tags: {
         "A:仕事": [
-            { title: "A01:大会を開くということは", file:"work/A01.html" }
+            { title: "A01:大会を開くということは", file:"work/A01.html" },
+            { title: "A02:ルールの骨組みを作る", file:"work/A02.html" }
         ],
         "B:ゲーム性": [
             { title: "B01: 「おもしろい」 ってなんだろう", file: "gameplay/B01.html" }
