@@ -15,7 +15,8 @@ const blogConfig = {
             { title: "C02: Twitter民のための言語学", file: "writing/C02.html" }
         ],
         "D:ヴィジュアル": [
-            { title: " D01:画像や動画の役割", file: "visual/D01.html" }
+            { title: " D01:画像や動画の役割", file: "visual/D01.html" },
+            { title: " D02:画像でカバー！", file: "visual/D02.html" }
         ],
         "E:配信": [
             { title: "E01:盛り上がりを演出する", file: "streaming/E01.html" }
