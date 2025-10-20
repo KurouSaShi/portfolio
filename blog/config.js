@@ -11,7 +11,8 @@ const blogConfig = {
             { title: "B02:いろんなゲームに触れる", file:"gameplay/B02.html" }
         ],
         "C:文章": [
-            { title: "C01: 人に伝える一番簡単な手段", file: "writing/C01.html" }
+            { title: "C01: 人に伝える一番簡単な手段", file: "writing/C01.html" },
+            { title: "C02: Twitter民のための言語学", file: "writing/C02.html" }
         ],
         "D:ヴィジュアル": [
             { title: " D01:画像や動画の役割", file: "visual/D01.html" }
