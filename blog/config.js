@@ -7,7 +7,8 @@ const blogConfig = {
             { title: "A02:ルールの骨組みを作る", file:"work/A02.html" }
         ],
         "B:ゲーム性": [
-            { title: "B01: 「おもしろい」 ってなんだろう", file: "gameplay/B01.html" }
+            { title: "B01: 「おもしろい」 ってなんだろう", file: "gameplay/B01.html" },
+            { title: "B02:いろんなゲームに触れる- 音ゲー大会小噺", file:"gameplay/B02.html" }
         ],
         "C:文章": [
             { title: "C01: 人に伝える一番簡単な手段", file: "writing/C01.html" }
