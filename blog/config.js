@@ -19,7 +19,8 @@ const blogConfig = {
             { title: " D02:画像でカバー！", file: "visual/D02.html" }
         ],
         "E:配信": [
-            { title: "E01:盛り上がりを演出する", file: "streaming/E01.html" }
+            { title: "E01:盛り上がりを演出する", file: "streaming/E01.html" },
+            { title: "E02:OBSを準備する", file: "streaming/E02.html" }
         ],
         "F:チーム運営": [
             { title: "F01:人が増えると仕事も増える！？", file: "management/F01.html" }
