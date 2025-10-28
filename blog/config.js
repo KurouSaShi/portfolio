@@ -23,7 +23,8 @@ const blogConfig = {
             { title: "E02:OBSを準備する", file: "streaming/E02.html" }
         ],
         "F:チーム運営": [
-            { title: "F01:人が増えると仕事も増える！？", file: "management/F01.html" }
+            { title: "F01:人が増えると仕事も増える！？", file: "management/F01.html" },
+            { title: "F02:少数精鋭", file: "management/F02.html" }
         ],
         "G:外部とのやり取り": [
             { title: "G01:誰が味方？", file: "outreach/G01.html" }
