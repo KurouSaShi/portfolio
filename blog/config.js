@@ -27,7 +27,8 @@ const blogConfig = {
             { title: "F02:少数精鋭", file: "management/F02.html" }
         ],
         "G:外部とのやり取り": [
-            { title: "G01:誰が味方？", file: "outreach/G01.html" }
+            { title: "G01:誰が味方？", file: "outreach/G01.html" },
+            { title: "G02:運営じゃないけど運営", file: "outreach/G02.html" }
         ],
         "H:選手": [
             { title: "H01:選手あっての大会", file: "players/H01.html" }
