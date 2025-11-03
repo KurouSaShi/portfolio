@@ -34,7 +34,8 @@ const blogConfig = {
             { title: "H01:選手あっての大会", file: "players/H01.html" }
         ],
         "I:観客": [
-            { title: "I01:観客とともに進化する", file: "spectators/I01.html" }
+            { title: "I01:観客とともに進化する", file: "spectators/I01.html" },
+            { title: "I02:毎日動きを見せる", file: "spectators/I02.html" }
         ],
         "J:スケジュール": [
             { title: "J01:時間は信頼", file: "schedule/J01.html" }
