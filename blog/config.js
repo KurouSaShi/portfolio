@@ -31,7 +31,8 @@ const blogConfig = {
             { title: "G02:運営じゃないけど運営", file: "outreach/G02.html" }
         ],
         "H:選手": [
-            { title: "H01:選手あっての大会", file: "players/H01.html" }
+            { title: "H01:選手あっての大会", file: "players/H01.html" },
+            { title: "H02:道を作る", file: "players/H02.html" }
         ],
         "I:観客": [
             { title: "I01:観客とともに進化する", file: "spectators/I01.html" },
