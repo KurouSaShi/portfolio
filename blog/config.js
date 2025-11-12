@@ -41,14 +41,11 @@ const blogConfig = {
         "J:スケジュール": [
             { title: "J01:時間は信頼", file: "schedule/J01.html" },
             { title: "J02:余裕は何もしない時間ではない", file: "schedule/J02.html" }
-        ],
-        "K:ルール": [
-             { title: "K01:大会はアイディア勝負？", file: "rule/K01.html" }
-        ],
-        "L:実例": [
+        ]
+        "K:実例": [
             { title: "L01:LINEオープンチャットでの大会", file: "examples/L01.html" }
         ],
-        "M:小噺": [
+        "L:小噺": [
              { title: "M01:音ゲーが下手でも大会出来る？", file: "story/M01.html" }
         ]    
     }
