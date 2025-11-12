@@ -39,7 +39,8 @@ const blogConfig = {
             { title: "I02:毎日動きを見せる", file: "spectators/I02.html" }
         ],
         "J:スケジュール": [
-            { title: "J01:時間は信頼", file: "schedule/J01.html" }
+            { title: "J01:時間は信頼", file: "schedule/J01.html" },
+            { title: "J02:余裕は何もしない時間ではない", file: "schedule/J02.html" }
         ],
         "K:ルール": [
              { title: "K01:大会はアイディア勝負？", file: "rule/K01.html" }
