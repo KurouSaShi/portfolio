@@ -41,7 +41,7 @@ const blogConfig = {
         "J:スケジュール": [
             { title: "J01:時間は信頼", file: "schedule/J01.html" },
             { title: "J02:余裕は何もしない時間ではない", file: "schedule/J02.html" }
-        ]
+        ],
         "K:実例": [
             { title: "L01:LINEオープンチャットでの大会", file: "examples/L01.html" }
         ],
