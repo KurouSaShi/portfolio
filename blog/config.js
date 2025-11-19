@@ -43,7 +43,8 @@ const blogConfig = {
             { title: "J02:余裕は何もしない時間ではない", file: "schedule/J02.html" }
         ],
         "K:実例": [
-            { title: "L01:LINEオープンチャットでの大会", file: "examples/L01.html" }
+            { title: "L01:LINEオープンチャットでの大会", file: "examples/L01.html" },
+             { title: "L02:TAKIMI SENCE", file: "examples/L02.html" }
         ],
         "L:小噺": [
              { title: "M01:音ゲーが下手でも大会出来る？", file: "story/M01.html" }
