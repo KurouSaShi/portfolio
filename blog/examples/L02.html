@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L01:LINEオープンチャットでの大会 - 音ゲー大会小噺</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><a href="../top.html" style="color: inherit; text-decoration: none;">音ゲー大会小噺</a></h1>
+            <button class="sidebar-toggle" onclick="toggleSidebar()">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+
+    <div class="container">
+        <main class="main-content">
+            <article class="article">
+                <div class="article-content">
+                    <!-- ここに本文を記述 -->
+                      <h1>TAKUMI SENCE</h1>
+                    <p>時系列は少し先にずれて第2回鳩神杯の少し後の話。</p>
+                    <p>自分が実験のために開いたTAKUMI3の大会です。</p>
+                    <p>大会と言っても参加者は4人の予選なし一発勝負だったので大会というほどたいそうな者じゃないですけどね。</p>
+                    <p>ルールも一応言っておきましょう。1人1曲の自選曲と1曲の運営指定曲を全てやって合計スコアが高い人が勝ち。それだけです。</p>
+                    <p>先ほど言った実験についてもしかしたら話していないかもしれないと思い、書きまとめていきます。</p>
+                    <h2>配信チェック</h2>
+                    <p>まず自分のpcが耐え切れるか確かめたかったです。</p>
+                    <p>4人配信を描画しつつさらにOBSでYoutube配信する。時にはツールやその他アプリも弄る</p>
+                    <p>ちなみに余裕で耐えました。鳩神杯3rdから4人同時プレイになったのはこの実験結果があったからですね。</p>
+                    <h2>集計ツールのテスト</h2>
+                    <p>この時初めてGAS(※)を触れ、その実践テストもしたかったです。</p>
+                    <p>この集計ツールは姿を変え鳩神杯4thでも活かされるのですが、それはまたおいおい....</p>
+                    <p>この時使った集計ツール、内部バージョンはv23なのでそう呼びましょう。v23は機能も全くなくあまりにも不便な物でした。GUIも用意しておらず、ソースの一部を書き換えてオプションを追加していく感じの操作をしていました。</p>
+                    <p>ですがやはり自動化というには心躍る物で開発している時も使っている時もとても楽しかったです。</p>
+                    <p>具体的な機能としては、任意の範囲の値の合計、値の一時保存など.....関数の延長線上って感じですね。</p>
+                    <p>GASを触り始めてから自分の大会(主に鳩神杯)のクオリティは大きく向上したと思います。みんなもGAS触ろう！簡単だからさ！</p>
+                    <br><p>※Googleスプレッドシート用マクロ言語。Googleの他サービスとの連携やWebアプリも作成できる。</p>
+                    <br><br><br>
+                    <p>私個人が主催した大会としてはこれが最後です。ここで私が学んだこと、そしてこれを読んでいる人に伝えたいのは「軽い理由で大会を開くのも、いいかもね〜」ということです。</p>
+                    <p>次回は「鳩神杯1st」のお話です。</p>
+                    
+
+
+
+                    
+                    <!-- ここに本文を記述 -->
+                </div>
+            </article>
+        </main>
+
+        <aside class="sidebar" id="sidebar"></aside>
+    </div>
+
+    <script src="../config.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
