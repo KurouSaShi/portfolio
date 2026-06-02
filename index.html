@@ -4,246 +4,279 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>黒兎氏 Portfolio</title>
-    <link rel="stylesheet" href="portfolio/style.css">
     <meta name="description" content="音楽ゲーム専門の譜面制作者（charter）およびWebDesignerのポートフォリオサイト">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">黒兎氏</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="blog/top.html">Blog</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>黒兎氏 M.B.R.</h1>
-            <p class="hero-subtitle">a.k.a veal<br>Rhythm Game Charter　　Web Designer</p>
-            <a href="#portfolio" class="cta-button">作品ページへ</a>
-        </div>
-    </section>
+<!-- Nav -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#home" class="logo">黒兎氏</a>
+        <ul class="nav-links">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="blog/top.html">Blog</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2 class="section-title fade-in">About Me</h2>
-        <div class="about-content fade-in">
-            <div class="about-image">
-                <div class="profile-image">
-                    <i class="fas fa-user" aria-hidden="true"></i>
+<!-- Hero -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <div class="hero-tag">PORTFOLIO</div>
+        <h1>黒兎氏<br><span>M.B.R.</span></h1>
+        <p class="hero-sub">a.k.a veal &nbsp;|&nbsp; Rhythm Game Charter &nbsp;|&nbsp; Web Designer</p>
+        <div class="hero-buttons">
+            <a href="#portfolio" class="btn-primary">作品を見る</a>
+            <a href="#contact" class="btn-outline">Contact</a>
+        </div>
+    </div>
+</section>
+
+<!-- ★ Portfolio（Heroの直下） -->
+<section id="portfolio" style="padding: 100px 0; background: var(--black);">
+    <div style="max-width:1200px; margin:0 auto; padding:0 2rem;">
+        <div class="section-label fade-in"><span>01 — Portfolio</span></div>
+        <h2 class="section-title fade-in">制作・活動実績</h2>
+        <p style="color:var(--muted); font-size:0.85rem; margin-bottom:2rem; text-align:right;" class="fade-in">
+            ↗ リンクありのカードはクリックで外部サイトへ
+        </p>
+
+        <div class="portfolio-grid">
+            <!-- 音ゲーマーズ -->
+            <div class="portfolio-item fade-in">
+                <a href="https://chikusho2times.shop/" target="_blank" rel="noopener noreferrer">
+                    <div class="item-icon"><i class="fas fa-globe" aria-hidden="true"></i></div>
+                    <h3>音ゲーマーズ</h3>
+                    <p>音ゲー専門情報サイトのライターとWebサイト構築を担当。専門性の高いコンテンツを提供。</p>
+                    <span class="item-period">2025.06~</span>
+                    <i class="fas fa-arrow-up-right-from-square item-arrow"></i>
+                </a>
+            </div>
+            <!-- Yomo2gik -->
+            <div class="portfolio-item fade-in">
+                <a href="https://unityroom.com/games/yomo2gik" target="_blank" rel="noopener noreferrer">
+                    <div class="item-icon"><i class="fas fa-gamepad" aria-hidden="true"></i></div>
+                    <h3>Yomo2gik 譜面制作</h3>
+                    <p>音楽ゲームYomo2gikの譜面制作および全譜面監修。スケジュール管理など一部運営業務も担当。</p>
+                    <span class="item-period">2023.12~</span>
+                    <i class="fas fa-arrow-up-right-from-square item-arrow"></i>
+                </a>
+            </div>
+            <!-- 鳩神杯 -->
+            <div class="portfolio-item fade-in">
+                <div class="item-icon"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+                <h3>鳩神杯 運営</h3>
+                <p>Phigros非公式大会「鳩神杯」を4回運営。4回目では特設サイトおよびログインシステムも作成。</p>
+                <span class="item-period">2022.03~2025.04</span>
+            </div>
+            <!-- lataris -->
+            <div class="portfolio-item fade-in">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="item-icon"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+                    <h3>lataris 運営</h3>
+                    <p>Yomo2gikで培った運営能力を活かし、lataris運営として活動中。</p>
+                    <span class="item-period">2025.09~</span>
+                    <i class="fas fa-arrow-up-right-from-square item-arrow"></i>
+                </a>
+            </div>
+            <!-- note -->
+            <div class="portfolio-item fade-in">
+                <a href="https://note.com/kurousa_shi" target="_blank" rel="noopener noreferrer">
+                    <div class="item-icon"><i class="fas fa-file-signature" aria-hidden="true"></i></div>
+                    <h3>音ゲー企画の発信</h3>
+                    <p>noteで音ゲーに関する企画（主に非公式大会）のノウハウや運営レポートを不定期発信。</p>
+                    <i class="fas fa-arrow-up-right-from-square item-arrow"></i>
+                </a>
+            </div>
+            <!-- Blog -->
+            <div class="portfolio-item fade-in">
+                <a href="blog/top.html" target="_blank" rel="noopener noreferrer">
+                    <div class="item-icon"><i class="fas fa-cube" aria-hidden="true"></i></div>
+                    <h3>Blog</h3>
+                    <p>音ゲー大会のノウハウを短い記事形式で不定期公開。必要な記事だけ読める設計。</p>
+                    <span class="item-period">2025.10~</span>
+                    <i class="fas fa-arrow-up-right-from-square item-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ★ YouTube -->
+<section class="youtube-section" id="youtube">
+    <div class="youtube-inner">
+        <div class="section-label fade-in"><span>02 — Video</span></div>
+        <h2 class="section-title fade-in">動画</h2>
+
+        <div class="yt-grid">
+            <!-- カード1 -->
+            <div class="yt-card fade-in">
+                <div class="yt-thumb">
+                    <!-- URLが決まったら src="https://www.youtube.com/embed/VIDEO_ID" に書き換え -->
+                    <div class="yt-placeholder">
+                        <i class="fab fa-youtube"></i>
+                        <span>動画URL準備中</span>
+                    </div>
+                </div>
+                <div class="yt-info">
+                    <h4>動画タイトル①</h4>
+                    <p>キャプションをここに入力してください。</p>
                 </div>
             </div>
-            <div class="about-text">
-                <p>音楽ゲーム専門の譜面制作者（charter）として活動しており、WebDesignerとしても様々なプロジェクトに参加しています。</p>
-                <p>音ゲー専門情報サイト『音ゲーマーズ』でライターとWebサイト構築を担当。音楽ゲームYomo2gikの譜面制作および全譜面監修も行っています。</p>
-                <p>音ゲー大会の運営サポートも積極的に行っており、コミュニティの発展に貢献しています。</p>
+            <!-- カード2 -->
+            <div class="yt-card fade-in">
+                <div class="yt-thumb">
+                    <div class="yt-placeholder">
+                        <i class="fab fa-youtube"></i>
+                        <span>動画URL準備中</span>
+                    </div>
+                </div>
+                <div class="yt-info">
+                    <h4>動画タイトル②</h4>
+                    <p>キャプションをここに入力してください。</p>
+                </div>
+            </div>
+            <!-- カード3 -->
+            <div class="yt-card fade-in">
+                <div class="yt-thumb">
+                    <div class="yt-placeholder">
+                        <i class="fab fa-youtube"></i>
+                        <span>動画URL準備中</span>
+                    </div>
+                </div>
+                <div class="yt-info">
+                    <h4>動画タイトル③</h4>
+                    <p>キャプションをここに入力してください。</p>
+                </div>
+            </div>
+            <!-- カード4 -->
+            <div class="yt-card fade-in">
+                <div class="yt-thumb">
+                    <div class="yt-placeholder">
+                        <i class="fab fa-youtube"></i>
+                        <span>動画URL準備中</span>
+                    </div>
+                </div>
+                <div class="yt-info">
+                    <h4>動画タイトル④</h4>
+                    <p>キャプションをここに入力してください。</p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <h2 class="section-title fade-in">Skills</h2>
+<!-- About -->
+<section id="about" class="section">
+    <div class="section-label fade-in"><span>03 — About</span></div>
+    <div class="about-wrap">
+        <div class="about-left fade-in">
+            <div class="about-badge">Charter / Web Designer</div>
+            <div class="about-name">黒兎氏</div>
+            <div class="about-alias">a.k.a veal</div>
+        </div>
+        <div class="about-text fade-in">
+            <p>音楽ゲーム専門の譜面制作者（charter）として活動しており、WebDesignerとしても様々なプロジェクトに参加しています。</p>
+            <p>音ゲー専門情報サイト『音ゲーマーズ』でライターとWebサイト構築を担当。音楽ゲームYomo2gikの譜面制作および全譜面監修も行っています。</p>
+            <p>音ゲー大会の運営サポートも積極的に行っており、コミュニティの発展に貢献しています。</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" style="padding: 80px 0; background: var(--surface); border-top:1px solid var(--border);">
+    <div style="max-width:1200px; margin:0 auto; padding:0 2rem;">
+        <div class="section-label fade-in"><span>04 — Skills</span></div>
+        <h2 class="section-title fade-in">スキル</h2>
         <div class="skills-grid">
             <div class="skill-card fade-in">
-                <i class="fas fa-music" aria-hidden="true"></i>
+                <div class="skill-icon"><i class="fas fa-music" aria-hidden="true"></i></div>
                 <h3>Rhythm Game Charter</h3>
                 <p>音楽ゲーム「Yomo2gik」の譜面制作および全譜面監修を担当</p>
             </div>
             <div class="skill-card fade-in">
-                <i class="fas fa-code" aria-hidden="true"></i>
+                <div class="skill-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
                 <h3>Web Development</h3>
                 <p>音ゲー専門情報サイトのサイト構築とメンテナンス</p>
             </div>
             <div class="skill-card fade-in">
-                <i class="fas fa-pen-fancy" aria-hidden="true"></i>
+                <div class="skill-icon"><i class="fas fa-pen-fancy" aria-hidden="true"></i></div>
                 <h3>Content Writing</h3>
                 <p>音ゲー専門情報サイトでのライター活動</p>
             </div>
             <div class="skill-card fade-in">
-                <i class="fas fa-users" aria-hidden="true"></i>
+                <div class="skill-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
                 <h3>Event Management</h3>
                 <p>音ゲー大会の運営サポートとコメンテーター活動</p>
             </div>
         </div>
-    </section>
-
-    <!-- Portfolio Section -->
-<section id="portfolio" class="section">
-    <h2 class="section-title fade-in">Portfolio</h2>
-    <p style="text-align: center">クリックするとそのサイトに飛びます</p>
-    <div class="portfolio-grid">
-        <div class="portfolio-item fade-in">
-            <div class="portfolio-image">
-                <i class="fas fa-globe" aria-hidden="true"></i>
-            </div>
-            <div class="portfolio-content">
-                <a href="https://chikusho2times.shop/" class="portfolio-link" target="_blank" rel="noopener noreferrer">
-                    <h3>音ゲーマーズ</h3>
-                    <p>音ゲー専門情報サイトのライターとWebサイト構築を担当。専門性の高いコンテンツを提供。<br>2025.06~</p>
-                </a>
-            </div>
-        </div>
-        <div class="portfolio-item fade-in">
-            <div class="portfolio-image">
-                <i class="fas fa-gamepad" aria-hidden="true"></i>
-            </div>
-            <div class="portfolio-content">
-                <a href="https://unityroom.com/games/yomo2gik" class="portfolio-link" target="_blank" rel="noopener noreferrer">
-                    <h3>Yomo2gik 譜面制作</h3>
-                    <p>音楽ゲームYomo2gikの譜面制作および全譜面監修。スケジュール管理などの一部運営業務も担当。<br>2023.12~</p>
-                </a>
-            </div>
-        </div>
-        <div class="portfolio-item fade-in">
-            <div class="portfolio-image">
-                <i class="fas fa-trophy" aria-hidden="true"></i>
-            </div>
-            <div class="portfolio-content">
-                <h3>鳩神杯 運営</h3>
-                <p>Phigros非公式大会「鳩神杯」を4回運営。4回目ではWebデザイン制作技術を生かし特設サイトおよびログインシステムも作成。<br>2022.03~2025.04</p>
-            </div>
-        </div>
-        <div class="portfolio-item fade-in">
-            <div class="portfolio-image">
-                <i class="fas fa-trophy" aria-hidden="true"></i>
-            </div>
-            <div class="portfolio-content">
-                <a href="#" class="portfolio-link" target="_blank" rel="noopener noreferrer">
-                    <h3>lataris 運営</h3>
-                    <p>Yomo2gikで培った運営能力を活かし、lataris運営として活動<br>2025.09~</p>
-                </a>
-            </div>
-        </div>
-        <div class="portfolio-item fade-in">
-            <div class="portfolio-image">
-                <i class="fas fa-file-signature" aria-hidden="true"></i>
-            </div>
-            <div class="portfolio-content">
-                <a href="https://note.com/kurousa_shi" class="portfolio-link" target="_blank" rel="noopener noreferrer">
-                    <h3>音ゲー企画の発信</h3>
-                    <p>noteで音ゲーに関する企画(主に非公式大会)でのノウハウや運営レポートを不定期に発信</p>
-                </a>
-            </div>
-        </div>
-        <a href="blog/top.html" class="portfolio-link" target="_blank" rel="noopener noreferrer">
-        <div class="portfolio-item fade-in">
-            <div class="portfolio-image">
-                <i class="fas fa-cube" aria-hidden="true"></i>
-            </div>
-            <div class="portfolio-content">
-                    <h3>Blog</h3>
-                    <p>noteと同じく音ゲー大会のノウハウを不定期に公開していきます。<br>noteと違う点は1記事をとても短く、必要な記事だけ見れるようにしてあります。<br>2025.10~</p>        
-            </div>
-        </div>
-        </a>
     </div>
 </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="section">
-            <h2 class="section-title fade-in">Contact</h2>
-            <div class="contact-content fade-in">
-                <p class="contact-description">ご連絡はTwitterのDMのほうが気付きやすいと思います。音ゲー大会運営のお手伝いが必要ならばお気軽にご連絡ください（無償）</p>
-                <div class="contact-links">
-                    <a href="https://x.com/KurouSha_" class="contact-link" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <span>Twitter</span>
-                    </a>
-                    <a href="https://bsky.app/profile/kurousha.bsky.social" class="contact-link" target="_blank" rel="noopener noreferrer">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5.53 4.5 10.02 10 10.02s10-4.49 10-10.02c0-5.53-4.5-10.02-10-10.02zm4.85 7.35c0 2.27-1.85 4.13-4.13 4.13s-4.13-1.86-4.13-4.13c0-2.27 1.85-4.13 4.13-4.13s4.13 1.86 4.13 4.13z"/>
-                        </svg>
-                        <span>Bluesky</span>
-                    </a>
-                    <a href="https://note.com/kurousa_shi" class="contact-link" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-pen-nib" aria-hidden="true"></i>
-                        <span>note</span>
-                    </a>
-                    <a href="mailto:kurousa2872@gmail.com" class="contact-link">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <span>Email</span>
-                    </a>
-                </div>
-                <div class="contact-info">
-                    <h3>各種連絡先</h3>
-                    <div class="contact-details">
-                        <div>
-                            <p><strong>Twitter:</strong> @KurouSha_</p>
-                            <p><strong>Discord:</strong> kurousha</p>
-                        </div>
-                        <div>
-                            <p><strong>Email:</strong> kurousa2872@gmail.com</p>
-                            <p><strong>YouTube:</strong> @KurouSha-veal</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Contact -->
+<section id="contact" class="contact-section">
+    <div class="section">
+        <div class="section-label fade-in"><span>05 — Contact</span></div>
+        <h2 class="section-title fade-in">お問い合わせ</h2>
+        <p class="fade-in" style="color:var(--muted); font-size:0.95rem; max-width:600px; margin-bottom:2rem;">
+            ご連絡はTwitterのDMのほうが気付きやすいと思います。音ゲー大会運営のお手伝いが必要ならばお気軽にご連絡ください（無償）
+        </p>
+        <div class="contact-links fade-in">
+            <a href="https://x.com/KurouSha_" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter" aria-hidden="true"></i>Twitter
+            </a>
+            <a href="https://bsky.app/profile/kurousha.bsky.social" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5.53 4.5 10.02 10 10.02s10-4.49 10-10.02c0-5.53-4.5-10.02-10-10.02zm4.85 7.35c0 2.27-1.85 4.13-4.13 4.13s-4.13-1.86-4.13-4.13c0-2.27 1.85-4.13 4.13-4.13s4.13 1.86 4.13 4.13z"/>
+                </svg>
+                Bluesky
+            </a>
+            <a href="https://note.com/kurousa_shi" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-pen-nib" aria-hidden="true"></i>note
+            </a>
+            <a href="mailto:kurousa2872@gmail.com" class="contact-link">
+                <i class="fas fa-envelope" aria-hidden="true"></i>Email
+            </a>
         </div>
-    </section>
+        <div class="contact-details-grid fade-in">
+            <p><strong>Twitter:</strong> @KurouSha_</p>
+            <p><strong>Discord:</strong> kurousha</p>
+            <p><strong>Email:</strong> kurousa2872@gmail.com</p>
+            <p><strong>YouTube:</strong> @KurouSha-veal</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 黒兎氏 Portfolio. 音ゲー関連のご相談はお気軽にどうぞ。</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 黒兎氏 Portfolio. 音ゲー関連のご相談はお気軽にどうぞ。</p>
+</footer>
 
-    <script>
-        // Scroll effects and navbar styling
-        function handleScroll() {
-            const navbar = document.getElementById('navbar');
-            const scrolled = window.scrollY > 50;
-            navbar.classList.toggle('scrolled', scrolled);
+<script>
+    // Navbar scroll
+    window.addEventListener('scroll', () => {
+        document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
 
-            // Fade-in animation for elements
-            const fadeElements = document.querySelectorAll('.fade-in');
-            const viewportHeight = window.innerHeight;
-            const triggerPoint = viewportHeight * 0.8;
+    // Fade-in on scroll
+    const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 
-            fadeElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                if (elementTop < triggerPoint) {
-                    element.classList.add('visible');
-                }
-            });
-        }
-
-        // Smooth scrolling for navigation links
-        function initSmoothScrolling() {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        }
-
-        // Initialize on load
-        function init() {
-            handleScroll();
-            initSmoothScrolling();
-        }
-
-        // Event listeners
-        window.addEventListener('scroll', handleScroll);
-        window.addEventListener('load', init);
-        document.addEventListener('DOMContentLoaded', init);
-    </script>
+    // Smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            const t = document.querySelector(a.getAttribute('href'));
+            if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+        });
+    });
+</script>
 </body>
 </html>
